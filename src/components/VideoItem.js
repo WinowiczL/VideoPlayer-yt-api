@@ -10,7 +10,9 @@ export const VideoItem = ({ video, onVideoSelect }) => {
         alt={video.snippet.title}
       />
       <div className="content">
-        <div className="header">{video.snippet.title}</div>
+        <div className="header" style={{ color: "white" }}>
+          {video.snippet.title}
+        </div>
       </div>
     </div>
   );

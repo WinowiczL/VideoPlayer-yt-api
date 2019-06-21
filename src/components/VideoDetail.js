@@ -11,8 +11,8 @@ export const VideoDetail = ({ video }) => {
       <div className="ui embed">
         <iframe src={videoSrc} title="video player" />
       </div>
-      <div className="ui segment">
-        <h4 className="ui header">{video.snippet.title}</h4>
+      <div className="ui black inverted segment">
+        <h4 className="ui red header">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
       </div>
     </div>

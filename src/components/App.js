@@ -3,6 +3,7 @@ import { SearchBar } from "./SearchBar";
 import youtube from "../apis/youtube";
 import { VideoList } from "../components/VideoList";
 import { VideoDetail } from "./VideoDetail";
+import "./App.css";
 
 export class App extends React.Component {
   state = {
@@ -35,7 +36,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container" style={{ marginTop: "10px" }}>
         <SearchBar handleOnSubmit={this.onTermSubmit} />
         <div className="ui grid">
           <div className="ui row">

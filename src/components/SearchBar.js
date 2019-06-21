@@ -18,10 +18,10 @@ export class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="ui segment search-bar">
+      <div className="ui segment black inverted search-bar">
         <form onSubmit={this.handleOnSubmit} className="ui form">
           <div className="field">
-            <label>Video Search</label>
+            <label style={{ color: "red" }}>Video Search</label>
             <input
               value={this.state.term}
               onChange={this.handleOnChange}
